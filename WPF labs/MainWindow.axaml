@@ -29,7 +29,8 @@
      <StackPanel Grid.Row="1" Grid.Column="1">
          <Label Content="Почта" FontSize="20" Margin="0 120 0 0"
                 />
-         <TextBox Margin="0 20 70 0" Text="Почта"
+         <TextBox Name="PochtaTextbox"
+                  Margin="0 20 70 0" Text="Почта"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
      </StackPanel>
@@ -37,7 +38,8 @@
      <StackPanel Grid.Row="2" Grid.Column="1"  >
          <Label Content="Пароль" FontSize="20" HorizontalAlignment="Left" 
                 Margin="0 20 0 0"/>
-         <TextBox Margin="0 20 70 0" Text="Почта"  
+         <TextBox Name="PasswordTextBox"
+                 Margin="0 20 70 0" Text="Пароль"  
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
          <Label Content="Восстановить пароль"
@@ -71,6 +73,11 @@
                  Foreground="White"
                  Height="50"
                  FontSize="20"/>
+         
+         <Label Name="OshibkaLabel" 
+                Foreground="Red" 
+                FontSize="20"
+                />
      </StackPanel>
         </Grid>
  </Grid>
