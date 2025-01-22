@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WPF labs")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Todo.Entities.")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb6322cf924579b7199b221318eb1d7ca97e55a9")]
-[assembly: System.Reflection.AssemblyProductAttribute("WPF labs")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WPF labs")]
+[assembly: System.Reflection.AssemblyProductAttribute("Todo.Entities.")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Todo.Entities.")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
