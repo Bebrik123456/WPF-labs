@@ -5,9 +5,11 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="WPF_labs.MainWindow"
         Title="WPF_labs">
- <Grid>
-     
-     <Grid.RowDefinitions>
+    <Grid>
+        <Image Source="Images/Logo.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="200" />
+        <Grid>
+    
+     <Grid.RowDefinitions >
          <RowDefinition Height="Auto" />
          <RowDefinition Height="Auto" />
          <RowDefinition Height="Auto" />
@@ -18,6 +20,7 @@
          <ColumnDefinition Width = "1*" />
          <ColumnDefinition Width = "1*" />
      </Grid.ColumnDefinitions>
+     
      
      <StackPanel Grid.Row="0" Grid.Column="1" >
          <Label Content="Добро пожаловать !" FontSize="26" Margin="0 20 0 0" />
@@ -42,6 +45,7 @@
                 HorizontalAlignment="Right" 
                 Margin="0 0 70 0" />
      </StackPanel>
+       
      
      <StackPanel Grid.Row="3" Grid.Column="1" >
          <Button Content="Войти"
@@ -53,8 +57,11 @@
                  Background="#f96060"
                  Foreground="White"
                  Height="50"
-                 FontSize="20"/>
+                 FontSize="20"
+                 Click="LoginButton"/>
+         
          <Button Content="Регистрация" 
+                 Click="Reg_Button"
                  HorizontalAlignment="Stretch"
                  HorizontalContentAlignment="Center"
                  VerticalAlignment="Center"
@@ -65,5 +72,6 @@
                  Height="50"
                  FontSize="20"/>
      </StackPanel>
+        </Grid>
  </Grid>
 </Window>

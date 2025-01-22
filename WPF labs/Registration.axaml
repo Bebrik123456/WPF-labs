@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WPF_labs.Registration"
+        Title="Registration">
+    
+        <Grid>
+            <Grid.RowDefinitions>
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="Auto" />
+     </Grid.RowDefinitions>
+     
+     <Grid.ColumnDefinitions>
+         <ColumnDefinition Width = "1*" />
+         <ColumnDefinition Width = "1*" />
+     </Grid.ColumnDefinitions>
+     
+     <StackPanel Grid.Row="0" Grid.Column="1" >
+         <Label Content="Добро пожаловать !" FontSize="26" Margin="0 20 0 0" />
+     </StackPanel>
+     
+     <StackPanel Grid.Row="1" Grid.Column="1">
+         <Label Content="Имя пользователя" FontSize="20" Margin=" 0 25  0 0 " />
+         <TextBox Margin="0 20 70 0" Text="Введите имя пользователя"
+                  BorderThickness="0 0 0 1" 
+                  CornerRadius="0 0 0 0 "/>
+         
+         <Label Content="Ваша почта" FontSize="20" />
+         <TextBox Margin="0 20 70 0" Text="Почта"
+                  BorderThickness="0 0 0 1" 
+                  CornerRadius="0 0 0 0 "/>
+         
+         <Label Content="Пароль" FontSize="20" />
+         <TextBox Margin="0 20 70 0" Text="Введите пароль"
+                  BorderThickness="0 0 0 1" 
+                  CornerRadius="0 0 0 0 "/>
+         
+         <Label Content="Повторите пароль" FontSize="20" />
+         <TextBox Margin="0 20 70 0" Text="Повторите пароль"
+                  BorderThickness="0 0 0 1" 
+                  CornerRadius="0 0 0 0 "/>
+         
+     </StackPanel>
+            
+     
+     <StackPanel Grid.Row="2" Grid.Column="1"  Margin="0 25 0 0">
+         <Button Content="Зарегистрироваться"
+                 HorizontalAlignment="Stretch"
+                 HorizontalContentAlignment="Center"
+                 VerticalAlignment="Center"
+                 CornerRadius="8 8 5 5  "
+                 Margin="50 0 150 0 " 
+                 Background="#f96060"
+                 Foreground="White"
+                 Height="50"
+                 FontSize="20"/>
+         <Button Content="Назад" 
+                 HorizontalAlignment="Stretch"
+                 HorizontalContentAlignment="Center"
+                 VerticalAlignment="Center"
+                 CornerRadius="5 5 8 8 "
+                 Margin="50 0 150 0 "
+                 Background="#f96060"
+                 Foreground="White"
+                 Height="50"
+                 FontSize="20"/>
+     </StackPanel>
+        </Grid>
+</Window>

@@ -65,3 +65,4 @@
 /Users/air/RiderProjects/WPF labs/WPF labs/obj/Debug/net8.0/WPF labs.csproj.Up2Date
 /Users/air/RiderProjects/WPF labs/WPF labs/obj/Debug/net8.0/WPF labs.genruntimeconfig.cache
 /Users/air/RiderProjects/WPF labs/WPF labs/obj/Debug/net8.0/ref/WPF labs.dll
+/Users/air/RiderProjects/WPF labs/WPF labs/obj/Debug/net8.0/WPF labs.sourcelink.json
