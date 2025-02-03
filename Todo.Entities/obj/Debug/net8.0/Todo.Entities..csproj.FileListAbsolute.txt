@@ -1,0 +1,13 @@
+/Users/air/RiderProjects/WPF labs/Todo.Entities/bin/Debug/net8.0/Todo.Entities..deps.json
+/Users/air/RiderProjects/WPF labs/Todo.Entities/bin/Debug/net8.0/Todo.Entities..dll
+/Users/air/RiderProjects/WPF labs/Todo.Entities/bin/Debug/net8.0/Todo.Entities..pdb
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..csproj.AssemblyReference.cache
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..GeneratedMSBuildEditorConfig.editorconfig
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..AssemblyInfoInputs.cache
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..AssemblyInfo.cs
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..csproj.CoreCompileInputs.cache
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..sourcelink.json
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..dll
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/refint/Todo.Entities..dll
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/Todo.Entities..pdb
+/Users/air/RiderProjects/WPF labs/Todo.Entities/obj/Debug/net8.0/ref/Todo.Entities..dll

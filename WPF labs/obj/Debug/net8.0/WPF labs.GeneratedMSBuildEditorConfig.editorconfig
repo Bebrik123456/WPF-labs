@@ -22,6 +22,9 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [/Users/air/RiderProjects/WPF labs/WPF labs/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/air/RiderProjects/WPF labs/WPF labs/Main.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/air/RiderProjects/WPF labs/WPF labs/MainEmpty.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

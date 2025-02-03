@@ -1,0 +1,85 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_labs.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WPF_labs.Main"
+        Title="WPF_labs"
+        MinHeight="636"
+        MinWidth="800"
+        >
+    
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition  Width="1*" />
+         
+        </Grid.ColumnDefinitions>
+            
+     <Grid.RowDefinitions>
+                
+     </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Column="0" >
+         <Image Source="Images/User.jpg"  Width="70" Height="70" />
+         
+         <Label Name="LabelName"
+                Content="Name"
+                FontSize="20" 
+                />
+         
+         <Label Content="Задачи"
+                Cursor="Hand"
+                FontSize="20"/>
+         
+         <Label Content="История" 
+                Cursor="Hand"
+                FontSize="20"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1">
+            
+        <StackPanel  Orientation="Horizontal" Margin="100 50 0 0" >
+            <Label Content="Дом" FontSize="20"  Foreground= "#4BEF12" Cursor="Hand" />
+            <Label Content="Работа" FontSize="20" Foreground="#EF6212" Margin="20 0 0 0 " Cursor="Hand"  />
+            <Label Content="Учеба" FontSize="20" Foreground="#125DEF" Margin="20 0 0 0" Cursor="Hand" />
+            <Label Content="Отдых" FontSize="20" Foreground="#AF0AFC" Margin="20 0 0 0" Cursor="Hand" />
+          </StackPanel>
+            
+           
+                
+            <StackPanel>
+                
+            </StackPanel>
+            <ScrollViewer Height="300">
+                <StackPanel>
+                  
+                </StackPanel>
+                
+                
+            </ScrollViewer>
+
+
+            
+        </StackPanel>
+        
+        
+        
+        
+        <StackPanel Grid.Column="2">
+            
+            
+        </StackPanel>
+        
+        
+     
+        
+        
+        </Grid>
+    
+    
+  
+</Window>

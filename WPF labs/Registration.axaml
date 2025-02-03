@@ -60,7 +60,8 @@
                  Foreground="White"
                  Height="50"
                  FontSize="20"/>
-         <Button Content="Назад" 
+         <Button Click="BackClick" 
+                Content="Назад" 
                  HorizontalAlignment="Stretch"
                  HorizontalContentAlignment="Center"
                  VerticalAlignment="Center"

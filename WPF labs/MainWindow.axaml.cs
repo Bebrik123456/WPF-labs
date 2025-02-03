@@ -39,7 +39,7 @@ public partial class MainWindow : Window
     {
             string email = PochtaTextbox.Text;
             var a = email.ToCharArray();
-            if (a.Contains('@')||a.Contains('.'))
+            if (a.Contains('@')||a.Contains('.')|| a.Length>=5)
             {
                 var password = PasswordTextBox.Text;
                 var b = password.ToCharArray();
