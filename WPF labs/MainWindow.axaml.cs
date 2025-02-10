@@ -7,6 +7,7 @@ using WPF_labs;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace WPF_labs;
 
@@ -30,9 +31,6 @@ public partial class MainWindow : Window
     {
        MailCheck();
        
-       
-       
-       
     }
 
     private void MailCheck()
@@ -44,12 +42,35 @@ public partial class MainWindow : Window
                 var password = PasswordTextBox.Text;
                 var b = password.ToCharArray();
 
-                if (b.Length>=6)
+                if (b.Length>=6 )
                 {
-                    Hide();
-                    MainEmpty empty = new MainEmpty();
-                    empty.Show();
-                    this.Close();
+                    string stringconnection = "Server=localhost;Database=WPFLabs_DB;User Id=root;Password=;";
+                    string query = "SELECT Login,Password  FROM User WHERE `Email` = @username AND `Password` = @password";
+                    string passwordDB = PasswordTextBox.Text;
+                    string loginDB = PochtaTextbox.Text;
+                    
+                    MySqlConnection con = new MySqlConnection(stringconnection);
+                    con.Open();
+
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@username", loginDB);
+                    cmd.Parameters.AddWithValue("@password", passwordDB);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        Hide();
+                        MainEmpty empty = new MainEmpty();
+                        empty.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        OshibkaLabel.Content = "Неверно введена почта или пароль";
+                    }
+
+
+
                 }
                 else
                 {

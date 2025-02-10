@@ -7,10 +7,7 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Collections.Generic;
 using WPF_labs.Models;
-using Avalonia.Markup.Xaml;
-using Avalonia.Markup.Xaml.Templates;
-using System.Collections.Immutable;
-using System.Collections.ObjectModel;
+using MySql.Data.MySqlClient;
 
 
 namespace WPF_labs;
@@ -23,13 +20,14 @@ public partial class Main : Window
     public Main()
     {
         InitializeComponent();
-         Tasks = new List<TaskModel>
-        {
-            new TaskModel { Id =1, Name = "Задача 1",Description = "Sisi",Status = 1,DateTime = DateTime.Now, Type = 1}
-            // Добавьте другие задачи по мере необходимости
-        };
-        DataContext = this;
+        
+    }
+
+
+    private void Window_Loaded()
+    {
         
         
     }
+
 }
