@@ -6,6 +6,7 @@
         <entry key="WPF labs/Components/TaskBlock.axaml" value="WPF labs/WPF labs.csproj" />
         <entry key="WPF labs/CreateTask.axaml" value="WPF labs/WPF labs.csproj" />
         <entry key="WPF labs/Main.axaml" value="WPF labs/WPF labs.csproj" />
+        <entry key="WPF labs/MainEmpty.axaml" value="WPF labs/WPF labs.csproj" />
       </map>
     </option>
   </component>

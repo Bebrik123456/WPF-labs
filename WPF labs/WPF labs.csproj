@@ -36,6 +36,10 @@
       <AvaloniaResource Include="Images\RedButton.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AvaloniaResource>
+      <None Remove="Images\—Pngtree—avatar vector icon white background_5184638.png" />
+      <AvaloniaResource Include="Images\—Pngtree—avatar vector icon white background_5184638.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </AvaloniaResource>
     </ItemGroup>
 
     <ItemGroup>
