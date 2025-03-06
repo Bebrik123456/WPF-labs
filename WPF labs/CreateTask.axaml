@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WPF_labs.CreateTask"
+        Title="Создание задачи"
+        MinHeight="600" 
+        MinWidth="800">
+        
+        <Grid>
+          
+         <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+         </Grid.ColumnDefinitions>       
+            
+            
+            <Grid Grid.Column="0">
+               <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="Auto" />
+               </Grid.RowDefinitions>
+               
+                <StackPanel Grid.Row="0" Margin="0 20 0 0">
+                 <Label Content="Название"/>
+                 <TextBox Name="TaskName"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"/>
+                    
+                </StackPanel>
+                
+                <StackPanel Grid.Row="1">
+                    <Label Content="Категория"/>
+                    <ComboBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="Category" >
+                        <ComboBoxItem Content="Дом" Foreground= "#4BEF12"  />
+                        <ComboBoxItem  Content="Работа" Foreground="#EF6212"/>
+                        <ComboBoxItem Content="Учеба" Foreground="#125DEF" />
+                        <ComboBoxItem Content="Отдых" Foreground="#AF0AFC"/>
+                    </ComboBox>
+                    
+                </StackPanel>
+                
+                <StackPanel Grid.Row="2">
+                    <Label Content="Описание"/>
+                        <TextBox Name="TaskDescription"
+                                 VerticalAlignment="Stretch"
+                                 HorizontalAlignment="Stretch" 
+                                 TextWrapping="Wrap"/>
+                    
+                </StackPanel>
+                
+                <Button Grid.Row="3"
+                        Content="Создать" 
+                        Height="50"
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Bottom"
+                        CornerRadius="5 5 5 5"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Foreground="White"
+                        Background="ForestGreen"
+                        FontSize="18"
+                        Margin="30 0 30 0"
+                        Click="SdelatZapis"/>
+                
+               
+            </Grid>
+            
+            <Grid Column="1">
+                
+             <Label Name="Vivid" />
+                <Button Content="Отмена" 
+                    Height="50"
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Bottom"
+                    CornerRadius="5 5 5 5"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Foreground="White"
+                    Background="Red"
+                    FontSize="18"
+                    Margin="30 0 30 0"
+                    Click="BackButton"
+                    />
+            </Grid>
+        </Grid>
+        
+        
+</Window>

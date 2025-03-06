@@ -11,4 +11,14 @@ public partial class MainEmpty : Window
     {
         InitializeComponent();
     }
+
+    private void SozdanieZadachi(object sender, RoutedEventArgs e)
+    {
+        Hide();
+        CreateTask TaskWin = new CreateTask();
+        TaskWin.Show();
+        this.Close();
+        
+        
+    }
 }

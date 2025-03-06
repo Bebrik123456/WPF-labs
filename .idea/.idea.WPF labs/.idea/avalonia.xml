@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="WPF labs/Components/TaskBlock.axaml" value="WPF labs/WPF labs.csproj" />
+        <entry key="WPF labs/CreateTask.axaml" value="WPF labs/WPF labs.csproj" />
+        <entry key="WPF labs/Main.axaml" value="WPF labs/WPF labs.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

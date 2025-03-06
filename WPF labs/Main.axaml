@@ -2,11 +2,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_labs.Models"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="WPF_labs.Main"
         Title="WPF_labs"
-        MinHeight="636"
+        MinHeight="650"
         MinWidth="800"
         >
     
@@ -50,66 +49,11 @@
           </StackPanel>
             
            
-               <StackPanel>
-                   <ScrollViewer Height="600">
-                       <StackPanel >
-                      
-                   <TextBox HorizontalAlignment="Stretch"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                   <TextBox Width="100"/>
-                       </StackPanel>
-                  </ScrollViewer>
-               </StackPanel>
-           
+           <ScrollViewer Height="500">
+            <StackPanel x:Name="TasksStackPanel">
                 
-            
-           
-
-
-            
+            </StackPanel>
+           </ScrollViewer>
         </StackPanel>
         
         
@@ -117,6 +61,8 @@
         
         <StackPanel Grid.Column="2">
             
+            <TextBlock x:Name="previewTitle"></TextBlock>
+            <TextBlock x:Name="previewSubtitle"></TextBlock>
             
         </StackPanel>
         

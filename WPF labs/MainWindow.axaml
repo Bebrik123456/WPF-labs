@@ -4,7 +4,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="WPF_labs.MainWindow"
-        Title="WPF_labs">
+        Title="WPF_labs"
+        MinHeight="636"
+        MinWidth="800">
+    
     <Grid>
         <Image Source="Images/Logo.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="200" />
         <Grid>
@@ -76,8 +79,7 @@
          
          <Label Name="OshibkaLabel" 
                 Foreground="Red" 
-                FontSize="20"
-                />
+                FontSize="20"/>
      </StackPanel>
         </Grid>
  </Grid>

@@ -27,22 +27,27 @@
      
      <StackPanel Grid.Row="1" Grid.Column="1">
          <Label Content="Имя пользователя" FontSize="20" Margin=" 0 25  0 0 " />
-         <TextBox Margin="0 20 70 0" Text="Введите имя пользователя"
+         <TextBox Name="NameTextBox"
+                  Margin="0 20 70 0" Text="Введите имя пользователя"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
          
          <Label Content="Ваша почта" FontSize="20" />
-         <TextBox Margin="0 20 70 0" Text="Почта"
+         <TextBox Name="EmailTextBox"
+                  Margin="0 20 70 0" 
+                  Text="Почта"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
          
          <Label Content="Пароль" FontSize="20" />
-         <TextBox Margin="0 20 70 0" Text="Введите пароль"
+         <TextBox Name="PasswordTextbox"
+                  Margin="0 20 70 0" Text="Введите пароль"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
          
          <Label Content="Повторите пароль" FontSize="20" />
-         <TextBox Margin="0 20 70 0" Text="Повторите пароль"
+         <TextBox Name="PassCheckBox"
+                  Margin="0 20 70 0" Text="Повторите пароль"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
          
@@ -50,7 +55,8 @@
             
      
      <StackPanel Grid.Row="2" Grid.Column="1"  Margin="0 25 0 0">
-         <Button Content="Зарегистрироваться"
+         <Button Name="RegButton"
+                 Content="Зарегистрироваться"
                  HorizontalAlignment="Stretch"
                  HorizontalContentAlignment="Center"
                  VerticalAlignment="Center"
@@ -59,7 +65,8 @@
                  Background="#f96060"
                  Foreground="White"
                  Height="50"
-                 FontSize="20"/>
+                 FontSize="20"
+                 Click="RegisterClick"/>
          <Button Click="BackClick" 
                 Content="Назад" 
                  HorizontalAlignment="Stretch"
@@ -72,5 +79,9 @@
                  Height="50"
                  FontSize="20"/>
      </StackPanel>
+            
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Label Name="LabelVivod" Content="" FontSize="24"/>
+            </Grid>
         </Grid>
 </Window>
