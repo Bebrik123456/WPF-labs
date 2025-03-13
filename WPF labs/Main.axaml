@@ -23,7 +23,7 @@
      </Grid.RowDefinitions>
         
         <StackPanel Grid.Column="0" >
-         <Image Source="Images/User.jpg"  Width="70" Height="70" Cursor="Hand" />
+         <Image Source="Images/userHole.png"  Width="70" Height="70" Cursor="Hand" />
          
          <Label Name="LabelName"
                 Content="Name"

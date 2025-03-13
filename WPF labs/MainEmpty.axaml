@@ -7,7 +7,7 @@
         Title="WPF_labs">
     <Grid>
         <StackPanel Spacing="1" HorizontalAlignment="Left" VerticalAlignment="Top" >
-        <Image Source="Images/—Pngtree—avatar vector icon white background_5184638" Height="200" Width="200" Cursor="Hand" Tapped="InputElement_OnTapped" Opacity="1" />
+        <Image Source="Images/userHole.png" Height="200" Width="200" Cursor="Hand" Tapped="InputElement_OnTapped" Opacity="1" />
         <Border Name="Border1" Background="Gray" Width="200" Height="100">
           <StackPanel>
               <TextBlock Text="Выход" Cursor="Hand" Tapped="TextBlock1Element_OnTapped"/>

@@ -4,6 +4,8 @@ using Avalonia.Interactivity;
 using Avalonia.Media;
 using MySql.Data.MySqlClient;
 using System.Linq;
+using Avalonia.Input;
+
 namespace WPF_labs;
 
 public partial class Registration : Window
@@ -119,6 +121,5 @@ public partial class Registration : Window
             return true;
         }
     }
-
-
+    
 }

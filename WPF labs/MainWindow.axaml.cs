@@ -7,15 +7,26 @@ using WPF_labs;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Avalonia.Input;
 using MySql.Data.MySqlClient;
-
+using WPF_labs.Components;
 namespace WPF_labs;
 
 public partial class MainWindow : Window
 {
+    private vsyakieMetodi _textBoxHelper;
     public MainWindow()
     {
         InitializeComponent();
+        _textBoxHelper = new vsyakieMetodi();
+    }
+    private void MyTextBox_PointerPressed(object sender)
+    {
+        var textBox = sender as TextBox;
+        if (textBox != null)
+        {
+            _textBoxHelper.ClearTextBoxOnFirstClick(textBox);
+        }
     }
 
     private void Reg_Button(object? sender, RoutedEventArgs e)
@@ -83,7 +94,11 @@ public partial class MainWindow : Window
         
     }
 
-  
 
+    private void PasswordTextBox_OnKeyDown(object? sender, KeyEventArgs e)
+    {
+        PasswordTextBox.Text = "";
+    }
 
+    
 }
