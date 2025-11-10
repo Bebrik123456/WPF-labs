@@ -18,7 +18,6 @@ public partial class TaskBlock : UserControl
     public TaskBlock()
     {
         InitializeComponent();
-        
         PointerPressed += OnPointerPressed;
     }
 
@@ -31,7 +30,6 @@ public partial class TaskBlock : UserControl
     {
         Title.Text = task.TaskName;
         Subtitle.Text = task.TaskDescription;
-
         _task = task;
     }
 }

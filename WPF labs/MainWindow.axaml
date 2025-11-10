@@ -33,7 +33,7 @@
          <Label Content="Почта" FontSize="20" Margin="0 120 0 0"
                 />
          <TextBox Name="PochtaTextbox"
-                  Margin="0 20 70 0" Text="Почта"
+                  Margin="0 20 70 0" Watermark="Почта"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "/>
      </StackPanel>
@@ -46,7 +46,7 @@
                   Margin="0 20 70 0"
                   BorderThickness="0 0 0 1" 
                   CornerRadius="0 0 0 0 "
-                  Text="Пароль"
+                  Watermark="Пароль"
                   KeyDown="PasswordTextBox_OnKeyDown"/>
          
          <Label Content="Восстановить пароль"

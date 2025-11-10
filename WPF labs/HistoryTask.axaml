@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WPF_labs.HistoryTask"
+        Title="Registration">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button Grid.Column="0" Content="Назад"
+                Click="BackButton"
+                Foreground="Azure"
+                Background="#f96060"
+                Margin="10 10 0 0 "
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"/>
+        
+        <Grid Grid.Column="1">
+            <StackPanel >
+                <Label FontSize="19" Content="История" HorizontalAlignment="Center" />
+                
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Дом" FontSize="18"  Foreground= "#4BEF12" Cursor="Hand" />
+                    <Label Content="Работа" FontSize="18" Foreground="#EF6212" Margin="20 0 0 0 " Cursor="Hand"  />
+                    <Label Content="Учеба" FontSize="18" Foreground="#125DEF" Margin="20 0 0 0" Cursor="Hand" />
+                    <Label Content="Отдых" FontSize="18" Foreground="#AF0AFC" Margin="20 0 0 0" Cursor="Hand" />
+               </StackPanel>
+                
+                <ScrollViewer Height="500">
+                <StackPanel>
+                       
+                </StackPanel>
+                </ScrollViewer>
+                
+           </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>
